@@ -12,176 +12,160 @@
 
   <!-- HERO -->
   <header class="hero">
-    <h1>Sanjay Ambati</h1>
-    <p>Data Engineer · Databricks · AWS · Redshift</p>
+    <div class="hero-inner">
+      <h1>I build data systems that don’t break at scale.</h1>
+      <p class="hero-sub">
+        Data Engineer · 4 years · Databricks · AWS · Redshift
+      </p>
 
-    <div class="hero-buttons">
-      <a href="#contact" class="btn">Contact Me</a>
-      <a href="Sanjay_ambati_DE.pdf" class="btn outline" download>Download Resume</a>
+      <div class="hero-actions">
+        <a href="#work" class="btn">View My Work</a>
+        <a href="Sanjay_ambati_DE.pdf" class="btn outline" download>Download Resume</a>
+      </div>
+
+      <div class="tech-strip">
+        Databricks · Spark · S3 · Glue · Redshift · Athena · Kinesis · Airflow
+      </div>
     </div>
   </header>
 
   <!-- ABOUT -->
-  <section id="about">
+  <section class="section">
     <h2>About Me</h2>
     <p>
-      Data Engineer with 3.5+ years of experience designing and building scalable
-      batch and streaming data pipelines using Databricks, PySpark, AWS, and SQL.
-      Passionate about automation, performance optimization, and data reliability.
+      I am a Data Engineer with 4 years of experience designing and building
+      scalable batch and streaming data platforms. I specialize in cloud-native
+      architectures, data reliability, and performance optimization using
+      Databricks, PySpark, AWS, and SQL.
     </p>
   </section>
 
-  <!-- RESPONSIBILITIES -->
-  <section id="responsibilities" class="alt">
-    <h2>Core Responsibilities</h2>
+  <!-- HOW I THINK -->
+  <section class="section alt">
+    <h2>How I Think as a Data Engineer</h2>
     <ul class="list">
-      <li>Design and maintain scalable batch and real-time data pipelines</li>
-      <li>Develop ETL/ELT workflows using Databricks, Glue, and PySpark</li>
-      <li>Ensure data quality through validations and reconciliation frameworks</li>
-      <li>Optimize Spark jobs and SQL queries for performance and cost</li>
-      <li>Collaborate with analytics, DevOps, and business teams</li>
+      <li>Reliability over speed</li>
+      <li>Observability over blind execution</li>
+      <li>Cost-awareness over brute force</li>
+      <li>Automation over manual intervention</li>
     </ul>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Databricks</span>
-      <span>Apache Spark</span>
-      <span>Python</span>
-      <span>SQL</span>
-      <span>AWS</span>
-      <span>Redshift</span>
-      <span>Glue</span>
-      <span>Lambda</span>
-      <span>Kinesis</span>
-      <span>Airflow</span>
-      <span>ETL / ELT</span>
-    </div>
-  </section>
-
   <!-- ARCHITECTURE -->
-  <section id="architecture" class="alt">
+  <section class="section">
     <h2>Architecture & Data Flow</h2>
+    <div class="architecture">
+      <span>Sources</span> →
+      <span>Ingestion</span> →
+      <span>Processing</span> →
+      <span>Storage</span> →
+      <span>Analytics</span> →
+      <span>Orchestration</span>
+    </div>
+
     <ul class="list">
       <li>Sources: On-prem DBs, APIs, SFTP, streaming systems</li>
-      <li>Ingestion: AWS DMS, Lambda, Kinesis, Glue Jobs</li>
+      <li>Ingestion: AWS DMS, Lambda, Kinesis, Glue</li>
       <li>Processing: Databricks (PySpark), EMR</li>
-      <li>Storage: Amazon S3 (Parquet, partitioned data lakes)</li>
+      <li>Storage: Amazon S3 (Parquet, partitioned)</li>
       <li>Analytics: Athena, Redshift</li>
       <li>Orchestration: Step Functions, Airflow, AutoSys</li>
     </ul>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
+  <!-- WORK -->
+  <section id="work" class="section alt">
+    <h2>Selected Work</h2>
 
     <div class="card">
       <h3>Databricks ↔ Redshift Validation Framework</h3>
       <p>
-        Built an automated framework to validate row counts across hundreds of
-        tables between Databricks and Redshift, eliminating manual checks.
+        Designed and built an automated validation framework to reconcile
+        datasets across hundreds of tables between Databricks and Redshift,
+        eliminating manual checks and reducing production issues.
       </p>
     </div>
 
     <div class="card">
-      <h3>Ingestion Framework Enhancement</h3>
+      <h3>Scalable Ingestion Framework</h3>
       <p>
-        Improved ingestion pipelines with better monitoring, retry mechanisms,
-        and performance tuning.
+        Enhanced ingestion pipelines with retries, monitoring, and alerting,
+        improving pipeline reliability and reducing operational overhead.
       </p>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="alt">
+  <section class="section">
     <h2>Experience</h2>
 
     <div class="card">
-      <h3>Infosys – Data Engineer (AMFAM Client)</h3>
-      <p class="duration">Feb 2023 – Present</p>
+      <h3>Data Engineer — Infosys</h3>
+      <p class="meta">Feb 2023 – Present · Financial Services Client</p>
       <ul>
-        <li>Led on-prem to AWS migration using S3, DMS, Glue, and Athena</li>
-        <li>Built scalable PySpark ETL pipelines</li>
-        <li>Optimized Spark jobs reducing runtime by 35%</li>
+        <li>Migrated on-prem systems to AWS using S3, DMS, Glue, and Athena</li>
+        <li>Built large-scale PySpark ETL pipelines on Databricks</li>
+        <li>Optimized Spark workloads, reducing runtime by 35%</li>
         <li>Orchestrated workflows using Step Functions and Lambda</li>
       </ul>
     </div>
 
     <div class="card">
-      <h3>Infosys – Data Engineer (FPL Client)</h3>
-      <p class="duration">Jan 2022 – Feb 2023</p>
+      <h3>Data Engineer — Infosys</h3>
+      <p class="meta">Jan 2022 – Feb 2023 · Enterprise Client</p>
       <ul>
-        <li>Migrated 20+ databases to AWS using DMS</li>
+        <li>Migrated 20+ databases to AWS using DMS and S3</li>
         <li>Built real-time pipelines using Kinesis and Firehose</li>
-        <li>Created source-to-target validation framework</li>
+        <li>Developed source-to-target validation framework</li>
       </ul>
     </div>
   </section>
 
   <!-- IMPACT -->
-  <section id="impact">
-    <h2>Key Achievements & Impact</h2>
-    <div class="card">
-      <ul>
-        <li>Reduced Spark job runtimes by <strong>35%</strong></li>
-        <li>Migrated <strong>20+ on-prem databases</strong> to AWS</li>
-        <li>Enabled near real-time analytics using Kinesis</li>
-        <li>Improved pipeline reliability with monitoring & alerts</li>
-      </ul>
+  <section class="section alt">
+    <h2>Impact</h2>
+    <div class="impact-grid">
+      <div>20+ databases migrated</div>
+      <div>35% Spark performance gain</div>
+      <div>Near real-time pipelines</div>
+      <div>Enterprise-scale data platforms</div>
     </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="alt">
-    <h2>Certifications</h2>
-    <div class="skills">
-      <span>AWS Certified Developer – Associate</span>
-      <span>Databricks Certified Data Engineer Associate</span>
-      <span>Google Cloud Associate Cloud Engineer</span>
-    </div>
-  </section>
-
-  <!-- AWARDS -->
-  <section id="awards">
-    <h2>Awards</h2>
-
-    <div class="card">
-      <h3>DNA Rise Award – Business Ninja</h3>
-      <p>Infosys</p>
-    </div>
-
-    <div class="card">
-      <h3>Insta Award (2×)</h3>
-      <p>Infosys</p>
-    </div>
-  </section>
-
-  <!-- VALUE -->
-  <section id="value" class="alt">
-    <h2>How I Add Value</h2>
+  <!-- WHAT I DON'T DO -->
+  <section class="section">
+    <h2>What I Don’t Do</h2>
     <ul class="list">
-      <li>Translate business needs into scalable data solutions</li>
-      <li>Automate manual processes to improve efficiency</li>
-      <li>Build reliable, monitored, production-ready pipelines</li>
-      <li>Write clean, maintainable, well-documented code</li>
-      <li>Mentor team members and participate in code reviews</li>
+      <li>Ship pipelines without monitoring</li>
+      <li>Hardcode schemas or credentials</li>
+      <li>Ignore cost and performance metrics</li>
+    </ul>
+  </section>
+
+  <!-- CURRENT -->
+  <section class="section alt">
+    <h2>Currently Exploring</h2>
+    <ul class="list">
+      <li>Lakehouse optimizations</li>
+      <li>Automated data quality frameworks</li>
+      <li>GenAI for data operations</li>
     </ul>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section class="section">
     <h2>Contact</h2>
     <p>📧 <a href="mailto:sanjayambati9@gmail.com">sanjayambati9@gmail.com</a></p>
     <p>🔗 <a href="https://linkedin.com/in/sanjayambati" target="_blank">linkedin.com/in/sanjayambati</a></p>
+    <p>💻 <a href="https://github.com/Sanjay-de" target="_blank">github.com/Sanjay-de</a></p>
   </section>
 
   <footer>
-    <p>© 2026 Sanjay Ambati</p>
+    <p>
+      Good data engineering is invisible — until it fails.<br/>
+      © 2026 Sanjay Ambati
+    </p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
