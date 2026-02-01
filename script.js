@@ -1,20 +1,148 @@
-const cards = document.querySelectorAll('.card');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = 1;
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+html {
+  scroll-behavior: smooth;
+}
 
-cards.forEach(card => {
-  card.style.opacity = 0;
-  card.style.transform = 'translateY(30px)';
-  card.style.transition = 'all 0.6s ease';
-  observer.observe(card);
-});
+body {
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 15px 0 30px;
+  color: #cbd5f5;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: #020617;
+  transition: all 0.25s ease;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section.alt {
+  background: #f1f5f9;
+  border-radius: 24px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #38bdf8;
+  display: block;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+/* LIST */
+.list {
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 12px;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #e2e8f0;
+  padding: 10px 18px;
+  margin: 6px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.skills span:hover {
+  background: #38bdf8;
+  transform: translateY(-2px);
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-left: 5px solid #38bdf8;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #020617;
+  color: #cbd5f5;
+  margin-top: 60px;
+}
+
+a {
+  color: #2563eb;
+}
